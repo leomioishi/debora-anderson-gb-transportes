@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Proposta Comercial - Masterplan JEN | GB Transportes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      width: 210mm;
+      height: 297mm;
+      padding: 12mm 14mm 10mm 14mm;
+      position: relative;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 10px;
+      margin-bottom: 11px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      color: #ffffff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+    }
+    .brand-info h1 {
+      font-size: 15px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+    }
+    .brand-info p {
+      font-size: 9.5px;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .badge-status {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      font-size: 8.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-cols: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 9px;
+      color: #475569;
+    }
+    .meta-grid strong {
+      color: #0f172a;
+    }
+
+    /* Section titles */
+    .section-title {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 7px;
+    }
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 12px;
+      background: #2563eb;
+      border-radius: 2px;
+    }
+
+    /* Eixos Grid */
+    .eixos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      margin-bottom: 11px;
+    }
+    .eixo-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 7px;
+      padding: 7px 10px;
+      background: #fbfcfe;
+    }
+    .eixo-tag {
+      font-size: 7.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-purple { background: #f3e8ff; color: #6b21a8; }
+    .tag-emerald { background: #d1fae5; color: #065f46; }
+    .tag-amber { background: #fef3c7; color: #92400e; }
+
+    .eixo-card h3 {
+      font-size: 10px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 3px;
+      line-height: 1.25;
+    }
+    .eixo-card p {
+      font-size: 8.5px;
+      color: #475569;
+      line-height: 1.35;
+      margin-bottom: 4px;
+    }
+    .eixo-list {
+      list-style: none;
+      font-size: 8px;
+      color: #334155;
+      line-height: 1.35;
+    }
+    .eixo-list li {
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 2px;
+    }
+    .eixo-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    /* Commercial Proposal Box */
+    .pricing-box {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 11px;
+    }
+    .pricing-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding-bottom: 7px;
+    }
+    .pricing-top-left p {
+      font-size: 8.5px;
+      text-transform: uppercase;
+      color: #94a3b8;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+    .pricing-top-left h2 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #10b981;
+      letter-spacing: -0.5px;
+    }
+    .pricing-top-left h2 span {
+      font-size: 10px;
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+    .pricing-badge {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid #10b981;
+      color: #34d399;
+      font-size: 8.5px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .split-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      padding: 7px 10px;
+    }
+    .split-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .split-title.sinal { color: #38bdf8; }
+    .split-title.saldo { color: #34d399; }
+    .split-value {
+      font-size: 13px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+    .split-desc {
+      font-size: 7.5px;
+      color: #94a3b8;
+      line-height: 1.3;
+    }
+
+    /* Steps & Actions */
+    .steps-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 9px 12px;
+      background: #f8fafc;
+      margin-bottom: 10px;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .step-item {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .step-num {
+      width: 18px;
+      height: 18px;
+      background: #2563eb;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8.5px;
+      font-weight: 800;
+      shrink: 0;
+    }
+    .step-text h4 {
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+    .step-text p {
+      font-size: 7.5px;
+      color: #475569;
+      line-height: 1.3;
+    }
+
+    /* Contact Banner */
+    .contact-banner {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 7px;
+      padding: 8px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-left h4 {
+      font-size: 9.5px;
+      font-weight: 800;
+      color: #065f46;
+      margin-bottom: 1px;
+    }
+    .contact-left p {
+      font-size: 8px;
+      color: #047857;
+    }
+    .contact-right {
+      text-align: right;
+    }
+    .whatsapp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #059669;
+      color: #ffffff;
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.3px;
+    }
+    .whatsapp-icon {
+      width: 12px;
+      height: 12px;
+      fill: #ffffff;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.5px;
+      color: #64748b;
+    }
+    .footer a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="top-bar">
+      <div class="brand">
+        <div class="brand-logo">GB</div>
+        <div class="brand-info">
+          <h1>MASTERPLAN JEN — DOSSIÊ & PROPOSTA COMERCIAL</h1>
+          <p>Aliança Estratégica: Débora & Anderson (GB Transportes) e Leomi Oishi</p>
+        </div>
+      </div>
+      <div class="badge-status">Proposta Homologada</div>
+    </div>
+    <div class="meta-grid">
+      <div>Data-Base: <strong>16 de Setembro de 2026</strong></div>
+      <div>Metodologia: <strong>JENIA / Ecossistema JCCG</strong></div>
+      <div>WhatsApp Oficial: <strong>+55 (11) 99187-3973</strong></div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div>
+    <!-- Section 1: Eixos -->
+    <div class="section-title">1. Os 4 Eixos Sinérgicos da Aliança</div>
+    <div class="eixos-grid">
+      <!-- Eixo 1 -->
+      <div class="eixo-card">
+        <span class="eixo-tag tag-blue">Eixo 01 • Capacitação In Company</span>
+        <h3>Treinamento Corporativo de IA Prática</h3>
+        <p>Formação prática presencial para até 6 colaboradores. Foco em triplicar a velocidade em emissão de comunicados, cotações e rotinas de fretes.</p>
+        <ul class="eixo-list">
+          <li><strong>Apostila Phygital:</strong> Material físico encadernado + QR Codes no Menutela.</li>
+          <li><strong>Raio-X de Competências:</strong> Relatório confidencial entregue à diretoria.</li>
+          <li><strong>Zero Retrabalho:</strong> Padronização operacional com segurança e sigilo.</li>
+        </ul>
+      </div>
+
+      <!-- Eixo 2 -->
+      <div class="eixo-card">
+        <span class="eixo-tag tag-purple">Eixo 02 • Mídia & Autoridade</span>
+        <h3>Produção Executiva: Podcast da Débora</h3>
+        <p>Programa sobre liderança feminina, superação e logística. Modelo 100% autossustentável via cotas de patrocínio comercial, tendo a GB como âncora.</p>
+        <ul class="eixo-list">
+          <li><strong>Modelo 3+1:</strong> 3 meses de estruturação editorial + 1 mês bônus de estúdio.</li>
+          <li><strong>Identidade Sonora:</strong> Jingles exclusivos Suno AI ("José do Egito", "Código Salomão").</li>
+          <li><strong>Crescimento de Marca:</strong> Autoridade da Débora alavancando novos negócios.</li>
+        </ul>
+      </div>
+
+      <!-- Eixo 3 -->
+      <div class="eixo-card">
+        <span class="eixo-tag tag-emerald">Eixo 03 • Comercial B2B</span>
+        <h3>Parceria de Expansão Corporativa</h3>
+        <p>Débora como parceira conectando empresários de sua rede e fornecedores da GB para contratação do treinamento de IA corporativo.</p>
+        <ul class="eixo-list">
+          <li><strong>20% de Comissão Líquida:</strong> Remuneração direta por cada turma fechada e paga.</li>
+          <li><strong>Argumento Fiscal:</strong> Treinamento dedutível como despesa operacional no Lucro Real.</li>
+          <li><strong>Sem Estoque:</strong> Escala comercial baseada em confiança e autoridade.</li>
+        </ul>
+      </div>
+
+      <!-- Eixo 4 -->
+      <div class="eixo-card">
+        <span class="eixo-tag tag-amber">Eixo 04 • Princípios & Legado</span>
+        <h3>Livro e Movimento "EVANGEDORISMO"</h3>
+        <p>Obra e movimento em coautoria com o Pr. Jessé Odilon, unindo valores cristãos inegociáveis, governança empresarial e tecnologia de ponta.</p>
+        <ul class="eixo-list">
+          <li><strong>Patrocínio Institucional GB:</strong> Marca presente no projeto editorial.</li>
+          <li><strong>Exemplares Exclusivos:</strong> Livros físicos para relacionamento com grandes clientes.</li>
+          <li><strong>Princípio de Honra:</strong> Fé, negócios e inteligência trabalhando juntos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 2: Proposta Comercial -->
+    <div class="section-title">2. Condições Comerciais & Investimento Especial PME</div>
+    <div class="pricing-box">
+      <div class="pricing-top">
+        <div class="pricing-top-left">
+          <p>Investimento Total da Formação (Turma de até 6 colaboradores)</p>
+          <h2>R$ 1.440,00 <span>(Apenas R$ 240,00 por colaborador com material incluso)</span></h2>
+        </div>
+        <div class="pricing-badge">Condição Especial PME</div>
+      </div>
+      <div class="split-grid">
+        <div class="split-card">
+          <div class="split-title sinal">
+            <span>SINAL DE ENTRADA (50%)</span>
+            <span>FASE 01</span>
+          </div>
+          <div class="split-value">R$ 720,00</div>
+          <p class="split-desc">Pago via PIX. Custeia a diagramação gráfica e a confecção das apostilas físicas personalizadas com o logotipo da GB Transportes. Inicia a janela de 10 dias úteis de produção.</p>
+        </div>
+        <div class="split-card">
+          <div class="split-title saldo">
+            <span>SALDO FINAL (50%)</span>
+            <span>FASE 05</span>
+          </div>
+          <div class="split-value">R$ 720,00</div>
+          <p class="split-desc">Pago somente após a conclusão do treinamento presencial prático de 4 horas e a entrega em mãos do Relatório Diagnóstico Confidencial (Raio-X de Competências) à diretoria.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Próximos Passos -->
+    <div class="section-title">3. Próximos Passos para Ativação</div>
+    <div class="steps-box">
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <h4>Confirmação do Sinal</h4>
+            <p>Envio do comprovante PIX de R$ 720,00 via WhatsApp para Leomi Oishi.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <h4>Impressão Gráfica</h4>
+            <p>Disparo imediato da produção das apostilas físicas personalizadas (10 dias úteis).</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <h4>Agendamento In Company</h4>
+            <p>Alinhamento de data e horário convenientes para o treinamento presencial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Banner -->
+    <div class="contact-banner">
+      <div class="contact-left">
+        <h4>Canal Oficial de Atendimento & Formalização</h4>
+        <p>Tire dúvidas, envie comprovantes e alinhe a data diretamente com o consultor responsável.</p>
+      </div>
+      <div class="contact-right">
+        <div class="whatsapp-badge">
+          <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.201.3-.778.978-.954 1.179-.176.2-.351.226-.653.075-.301-.15-1.272-.469-2.423-1.496-.895-.798-1.5-1.784-1.675-2.085-.176-.301-.019-.464.132-.614.136-.135.301-.351.452-.527.15-.176.201-.301.301-.502.1-.201.05-.376-.025-.527-.075-.15-.678-1.632-.93-2.239-.245-.59-.494-.51-.678-.52-.176-.008-.376-.01-.577-.01-.201 0-.527.075-.803.376-.276.301-1.054 1.03-1.054 2.512 0 1.482 1.079 2.912 1.23 3.113.15.201 2.123 3.242 5.143 4.545.719.31 1.28.495 1.718.634.722.23 1.379.197 1.899.12.579-.087 1.78-.727 2.031-1.43.251-.703.251-1.305.176-1.43-.076-.126-.276-.201-.577-.351z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.408C8.42 21.49 10.154 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.154c-1.636 0-3.158-.46-4.46-1.26l-.32-.196-2.955.836.84-2.88-.208-.335A8.118 8.118 0 013.846 12c0-4.496 3.658-8.154 8.154-8.154 4.496 0 8.154 3.658 8.154 8.154 0 4.496-3.658 8.154-8.154 8.154z"/>
+          </svg>
+          <span>WhatsApp: (11) 99187-3973</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>Leomi Oishi — Consultoria Estratégica • Metodologia JENIA / Ecossistema JCCG</div>
+    <div>Portal do Hub Executivo: <a href="https://leomioishi.github.io/debora-anderson-gb-transportes/">leomioishi.github.io/debora-anderson-gb-transportes</a></div>
+  </div>
+
+</body>
+</html>

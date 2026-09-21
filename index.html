@@ -140,9 +140,13 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+      <!-- Desktop Navigation Links (6 Abas) -->
+      <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-300">
         <a href="#quatro-eixos" class="hover:text-white transition-colors">4 Eixos</a>
+        <a href="#videos" class="hover:text-purple-400 transition-colors flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          Vídeos
+        </a>
         <a href="#jingles" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
           <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
           Jingles
@@ -154,39 +158,51 @@
 
       <!-- Right Action Area (CTA + Mobile Hamburger Toggle) -->
       <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-        <a href="#proposta" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-[11px] sm:text-xs md:text-sm font-semibold px-3 py-1.5 sm:px-4 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md shadow-blue-600/20 transition-all transform hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap">
+        <a href="#proposta" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-bold px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl shadow-md shadow-blue-600/20 transition-all transform hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap">
           Ver Proposta
         </a>
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" type="button" aria-label="Abrir Menu de Navegação" class="lg:hidden p-1.5 sm:p-2 rounded-lg bg-brandCard hover:bg-brandCardHover border border-brandBorder text-slate-300 hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-accentSky">
-          <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir Menu de Navegação" class="xl:hidden p-2 rounded-xl bg-brandCard hover:bg-brandCardHover border border-brandBorder text-slate-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-accentSky">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Dropdown Navigation Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-brandBorder/80 bg-[#0c0e16]/95 backdrop-blur-xl px-4 py-4 space-y-3 transition-all duration-300">
-      <div class="grid grid-cols-2 gap-2 text-xs font-medium">
-        <a href="#quatro-eixos" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-blue-500"></span> 4 Eixos
+    <!-- Mobile Dropdown Navigation Menu (6 Abas Balanceadas com Fonte Aumentada) -->
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-brandBorder/80 bg-[#0c0e16]/98 backdrop-blur-2xl px-4 py-5 space-y-4 transition-all duration-300">
+      <div class="grid grid-cols-2 gap-2.5 text-sm sm:text-base font-semibold">
+        <a href="#quatro-eixos" class="mobile-nav-link p-3 sm:p-3.5 rounded-xl bg-brandDark border border-brandBorder/70 text-slate-100 hover:border-blue-500/50 flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 shrink-0"></span>
+          <span>4 Eixos</span>
         </a>
-        <a href="#jingles" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-amber-300 hover:border-amber-500/50 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-amber-400"></span> Jingles
+        <a href="#videos" class="mobile-nav-link p-3 sm:p-3.5 rounded-xl bg-brandDark border border-brandBorder/70 text-purple-200 hover:border-purple-500/50 flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-purple-500 shrink-0"></span>
+          <span>Vídeos</span>
         </a>
-        <a href="#apresentacoes" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Apresentações
+        <a href="#jingles" class="mobile-nav-link p-3 sm:p-3.5 rounded-xl bg-brandDark border border-brandBorder/70 text-amber-200 hover:border-amber-500/50 flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0"></span>
+          <span>Jingles</span>
         </a>
-        <a href="#infografico" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-sky-400"></span> Infográfico
+        <a href="#apresentacoes" class="mobile-nav-link p-3 sm:p-3.5 rounded-xl bg-brandDark border border-brandBorder/70 text-slate-100 hover:border-blue-500/50 flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 shrink-0"></span>
+          <span>Apresentações</span>
         </a>
-        <a href="#proposta" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-emerald-300 hover:border-emerald-500/50 flex items-center gap-2 col-span-2 justify-center">
-          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Proposta & Valores
+        <a href="#infografico" class="mobile-nav-link p-3 sm:p-3.5 rounded-xl bg-brandDark border border-brandBorder/70 text-slate-100 hover:border-blue-500/50 flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-sky-400 shrink-0"></span>
+          <span>Infográfico</span>
+        </a>
+        <a href="#proposta" class="mobile-nav-link p-3 sm:p-3.5 rounded-xl bg-brandDark border border-brandBorder/70 text-emerald-200 hover:border-emerald-500/50 flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0"></span>
+          <span>Proposta & Valores</span>
         </a>
       </div>
-      <div class="pt-2 border-t border-brandBorder/60 flex items-center justify-between text-[11px] text-slate-400">
+      <div class="pt-3 border-t border-brandBorder/70 flex items-center justify-between text-xs sm:text-sm text-slate-300">
         <span>GB Transportes & Leomi Oishi</span>
-        <a href="https://wa.me/5511991873973" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-medium hover:underline">WhatsApp: (11) 99187-3973</a>
+        <a href="https://wa.me/5511991873973" target="_blank" rel="noopener noreferrer" class="text-emerald-400 font-bold hover:underline flex items-center gap-1.5">
+          <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>(11) 99187-3973</span>
+        </a>
       </div>
     </div>
   </header>
@@ -196,32 +212,36 @@
     <section class="relative pt-10 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 overflow-hidden">
       <div class="max-w-5xl mx-auto text-center relative z-10">
         <!-- Tag -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/25 text-accentSky text-[11px] sm:text-xs font-semibold uppercase tracking-wider mb-5">
-          <span class="w-1.5 h-1.5 rounded-full bg-accentSky animate-pulse"></span>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-accentSky text-xs sm:text-sm font-semibold uppercase tracking-wider mb-5">
+          <span class="w-2 h-2 rounded-full bg-accentSky animate-pulse"></span>
           Dossiê Executivo • Metodologia JENIA
         </div>
 
-        <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.2] mb-5 sm:mb-6 gradient-title">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.2] mb-5 sm:mb-6 gradient-title">
           Masterplan JEN: Inteligência Prática, Liderança & <span class="gradient-gold">Crescimento com Propósito</span>
         </h1>
 
-        <p class="text-sm sm:text-base md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-10 font-normal">
+        <p class="text-base sm:text-lg md:text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-10 font-normal">
           A aliança estratégica entre a consultoria executiva de <strong>Leomi Oishi</strong> e os empresários <strong>Débora e Anderson (GB Transportes)</strong> unindo tecnologia de ponta, produtividade com IA, podcast autossustentável e governança com valores cristãos.
         </p>
 
         <!-- Main Action Buttons -->
         <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-14">
-          <a href="#jingles" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 text-xs sm:text-sm">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-slate-950 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-            <span>Ouvir os 2 Jingles Oficiais</span>
+          <a href="#videos" class="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold px-5 py-3.5 rounded-xl shadow-lg shadow-purple-600/25 transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 text-sm sm:text-base">
+            <svg class="w-5 h-5 text-purple-200 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            <span>Assistir aos Vídeos</span>
           </a>
-          <a href="#apresentacoes" class="bg-brandCard hover:bg-brandCardHover text-white border border-brandBorder font-semibold px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all hover:border-slate-500 flex items-center justify-center gap-2 text-xs sm:text-sm">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-accentSky shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          <a href="#jingles" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-3.5 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 text-sm sm:text-base">
+            <svg class="w-5 h-5 text-slate-950 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+            <span>Ouvir 2 Jingles</span>
+          </a>
+          <a href="#apresentacoes" class="bg-brandCard hover:bg-brandCardHover text-white border border-brandBorder font-semibold px-5 py-3.5 rounded-xl transition-all hover:border-slate-400 flex items-center justify-center gap-2 text-sm sm:text-base">
+            <svg class="w-5 h-5 text-accentSky shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
             <span>Apresentações & PPTX</span>
           </a>
-          <a href="#infografico" class="bg-brandCard hover:bg-brandCardHover text-white border border-brandBorder font-semibold px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all hover:border-slate-500 flex items-center justify-center gap-2 text-xs sm:text-sm">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-            <span>Infográfico Visual</span>
+          <a href="#infografico" class="bg-brandCard hover:bg-brandCardHover text-white border border-brandBorder font-semibold px-5 py-3.5 rounded-xl transition-all hover:border-slate-400 flex items-center justify-center gap-2 text-sm sm:text-base">
+            <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            <span>Infográfico</span>
           </a>
         </div>
 
@@ -277,21 +297,21 @@
             <p class="text-sm text-slate-300 leading-relaxed mb-4">
               Formação prática presencial com até 6 colaboradores. Foco em triplicar a agilidade em emissão de comunicados, conferência de fretes, respostas diplomáticas a clientes e automação de rotinas.
             </p>
-            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Apostila Phygital:</strong> Material físico encadernado com QR Codes para o portal Menutela.
+                <span><strong>Apostila Phygital:</strong> Material físico encadernado com QR Codes para o portal Menutela.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Raio-X Confidencial:</strong> Relatório executivo para Anderson e Débora avaliando cada colaborador.
+                <span><strong>Raio-X Confidencial:</strong> Relatório executivo para Anderson e Débora avaliando cada colaborador.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Investimento:</strong> R$ 1.440 (50% sinal R$ 720 / 50% entrega).
+                <span><strong>Investimento:</strong> R$ 1.440 (50% sinal R$ 720 / 50% entrega).</span>
               </li>
             </ul>
-            <a href="#proposta" class="text-xs font-semibold text-accentSky hover:text-white inline-flex items-center gap-1">
+            <a href="#proposta" class="text-xs sm:text-sm font-semibold text-accentSky hover:text-white inline-flex items-center gap-1">
               Ver condições da proposta →
             </a>
           </div>
@@ -308,21 +328,21 @@
             <p class="text-sm text-slate-300 leading-relaxed mb-4">
               Programa voltado a empreendedorismo feminino, superação, gestão logística e fé. Modelo autossustentável bancado por cotas de patrocínio comercial, tendo a GB Transportes como patrocinadora âncora.
             </p>
-            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-purple-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>3 Meses de Estruturação:</strong> Pauta, esteira de conteúdo e treinamento de oratória.
+                <span><strong>3 Meses de Estruturação:</strong> Pauta, esteira de conteúdo e treinamento de oratória.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-purple-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>1 Mês Bônus de Estúdio:</strong> Gravação em estúdio profissional em Arujá.
+                <span><strong>1 Mês Bônus de Estúdio:</strong> Gravação em estúdio profissional em Arujá.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-purple-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Jingles Suno:</strong> Aberturas temáticas e teasers cantados para viralizar em redes sociais.
+                <span><strong>Jingles Suno:</strong> Aberturas temáticas e teasers cantados para viralizar em redes sociais.</span>
               </li>
             </ul>
-            <a href="#jingles" class="text-xs font-semibold text-purple-400 hover:text-white inline-flex items-center gap-1">
+            <a href="#jingles" class="text-xs sm:text-sm font-semibold text-purple-400 hover:text-white inline-flex items-center gap-1">
               Ouvir jingles e ver roteiros →
             </a>
           </div>
@@ -339,21 +359,21 @@
             <p class="text-sm text-slate-300 leading-relaxed mb-4">
               A Débora atua como parceira conectando empresários da sua rede de relacionamentos e fornecedores da GB para a contratação do Treinamento Corporativo de IA.
             </p>
-            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>20% de Comissão Líquida:</strong> Remuneração direta por cada turma fechada e paga.
+                <span><strong>20% de Comissão Líquida:</strong> Remuneração direta por cada turma fechada e paga.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Argumento Tributário Poderoso:</strong> Capacitação enquadrada como despesa dedutível no Lucro Real.
+                <span><strong>Argumento Tributário Poderoso:</strong> Capacitação enquadrada como despesa dedutível no Lucro Real.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Escalabilidade:</strong> Sem estoque, focado na autoridade conjunta.
+                <span><strong>Escalabilidade:</strong> Sem estoque, focado na autoridade conjunta.</span>
               </li>
             </ul>
-            <a href="#proposta" class="text-xs font-semibold text-emerald-400 hover:text-white inline-flex items-center gap-1">
+            <a href="#proposta" class="text-xs sm:text-sm font-semibold text-emerald-400 hover:text-white inline-flex items-center gap-1">
               Entenda a alavancagem de turmas →
             </a>
           </div>
@@ -370,21 +390,21 @@
             <p class="text-sm text-slate-300 leading-relaxed mb-4">
               Metodologia e obra literária em coautoria com o Pastor Jessé Odilon, unindo os ensinamentos eternos das Escrituras com governança empresarial séria e inovação tecnológica.
             </p>
-            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-300 mb-6">
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Patrocínio Institucional GB:</strong> Presença da marca como apoiadora oficial da edição.
+                <span><strong>Patrocínio Institucional GB:</strong> Presença da marca como apoiadora oficial da edição.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Exemplares Físicos Exclusivos:</strong> Livros para relacionamento corporativo com grandes clientes.
+                <span><strong>Exemplares Físicos Exclusivos:</strong> Livros para relacionamento corporativo com grandes clientes.</span>
               </li>
               <li class="flex items-center gap-2">
                 <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                <strong>Princípio de Honra:</strong> Fé, negócios e inteligência artificial trabalhando juntos.
+                <span><strong>Princípio de Honra:</strong> Fé, negócios e inteligência artificial trabalhando juntos.</span>
               </li>
             </ul>
-            <a href="#proposta" class="text-xs font-semibold text-amber-400 hover:text-white inline-flex items-center gap-1">
+            <a href="#proposta" class="text-xs sm:text-sm font-semibold text-amber-400 hover:text-white inline-flex items-center gap-1">
               Ver modelo institucional →
             </a>
           </div>
@@ -392,7 +412,65 @@
       </div>
     </section>
 
-    <!-- SECTION 2: Jukebox Executivo — Os Jingles do Masterplan -->
+    <!-- SECTION 2: Vídeos & Sínteses Executivas do NotebookLM (Nova Aba de Vídeos) -->
+    <section id="videos" class="py-16 sm:py-20 px-4 sm:px-6 border-t border-brandBorder/60 bg-[#090b12] relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-3">
+            <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            Multimídia Oficial • NotebookLM Studio
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Vídeos & Sínteses Executivas
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed">
+            Overviews dinâmicos gerados no NotebookLM a partir do caderno de fontes da aliança estratégica, sintetizando a aliança executiva e a produtividade prática com IA.
+          </p>
+        </div>
+
+        <!-- Video Showcase Box -->
+        <div class="glass-card rounded-3xl p-5 sm:p-8 border-purple-500/30 shadow-2xl">
+          <!-- Video Tabs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-brandBorder">
+            <div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
+              <button id="inline-tab-video-1" onclick="switchInlineVideo('O_Masterplan_JEN.mp4', '1. O Masterplan JEN — Visão Geral', 'Síntese completa dos 4 eixos estratégicos, modelo de sustentabilidade e aliança entre Débora, Anderson e Leomi Oishi.')" class="text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl bg-purple-600 text-white flex items-center gap-2 transition-all shrink-0">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                <span>1. O Masterplan JEN</span>
+              </button>
+              <button id="inline-tab-video-2" onclick="switchInlineVideo('Como_a_IA_Triplica_a_Agilidade_no_Escritório.mp4', '2. Como a IA Triplica a Agilidade no Escritório', 'Demonstração prática de como a capacitação in company acelera conferência de fretes, respostas e rotinas.')" class="text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl bg-brandDark text-slate-300 hover:text-white border border-brandBorder flex items-center gap-2 transition-all shrink-0">
+                <svg class="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                <span>2. IA no Escritório (Agilidade)</span>
+              </button>
+            </div>
+            <a id="inline-video-download" href="O_Masterplan_JEN.mp4" download class="text-xs sm:text-sm font-semibold text-slate-300 hover:text-white bg-brandDark hover:bg-brandCard px-4 py-2.5 rounded-xl border border-brandBorder flex items-center justify-center gap-2 transition-colors self-start sm:self-auto">
+              <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              <span>Baixar Vídeo (MP4)</span>
+            </a>
+          </div>
+
+          <!-- Inline HTML5 Video Player -->
+          <div class="bg-black rounded-2xl overflow-hidden border border-brandBorder shadow-inner aspect-video flex items-center justify-center">
+            <video id="inline-video-player" controls playsinline preload="metadata" class="w-full h-full object-contain rounded-2xl">
+              <source id="inline-video-source" src="O_Masterplan_JEN.mp4" type="video/mp4">
+              Seu navegador não suporta a reprodução de vídeo MP4.
+            </video>
+          </div>
+
+          <div class="mt-4 pt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-slate-300">
+            <div>
+              <h4 id="inline-video-title" class="text-sm sm:text-base font-bold text-white">1. O Masterplan JEN — Visão Geral</h4>
+              <p id="inline-video-desc" class="text-xs sm:text-sm text-slate-400 mt-0.5">Síntese completa dos 4 eixos estratégicos, modelo de sustentabilidade e aliança entre Débora, Anderson e Leomi Oishi.</p>
+            </div>
+            <div class="text-xs text-purple-400 font-medium shrink-0 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+              Vídeo em Alta Resolução
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Jukebox Executivo — Os Jingles do Masterplan -->
     <section id="jingles" class="py-20 px-6 border-t border-brandBorder/60 bg-[#0c0e15] relative">
       <div class="max-w-5xl mx-auto">
         <div class="text-center max-w-2xl mx-auto mb-14">
@@ -422,7 +500,7 @@
                 <span>🌾 José do Egito</span>
                 <span class="text-xs font-normal text-amber-300/80 bg-amber-400/10 px-2 py-0.5 rounded">Visão Antes da Decisão</span>
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
                 Inspirado na antecipação de cenários, prudência nos anos de fartura e liderança resoluta para atravessar tempestades. O som ideal para a visão executiva de Anderson e Débora.
               </p>
 
@@ -430,20 +508,20 @@
               <div class="bg-brandDark/80 p-4 rounded-xl border border-brandBorder mb-4">
                 <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
                   <span class="font-medium text-slate-200">Player Local (MP3):</span>
-                  <span id="status-audio-1" class="text-[10px] text-amber-400 font-mono">Carregando arquivo...</span>
+                  <span id="status-audio-1" class="text-xs text-amber-400 font-mono">Carregando arquivo...</span>
                 </div>
                 <audio id="audio-jose" controls class="w-full h-10 outline-none" preload="metadata">
                   <source src="José do Egito - Visão Antes da Decisão.mp3" type="audio/mpeg">
                   Seu navegador não suporta o elemento de áudio.
                 </audio>
-                <div class="mt-2 text-[11px] text-slate-400 flex items-center justify-between">
+                <div class="mt-2 text-xs text-slate-400 flex items-center justify-between">
                   <span class="truncate">Arquivo: <code class="text-accentSky">José do Egito - Visão Antes da Decisão.mp3</code></span>
                   <a href="José do Egito - Visão Antes da Decisão.mp3" download class="text-amber-400 hover:underline shrink-0 ml-2">Baixar</a>
                 </div>
               </div>
             </div>
 
-            <div class="pt-4 border-t border-brandBorder/50 text-[11px] text-slate-400 flex items-center justify-between">
+            <div class="pt-4 border-t border-brandBorder/50 text-xs text-slate-400 flex items-center justify-between">
               <span>Tema: Antecipação e Sabedoria</span>
               <span class="text-emerald-400 flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Pronto para o Podcast
@@ -455,7 +533,7 @@
           <div class="glass-card rounded-2xl p-7 border-blue-500/30 glow-blue relative flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-4">
-                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-blue-500/20 text-accentSky border border-blue-500/30">
+                <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-blue-500/20 text-accentSky border border-blue-500/30">
                   Jingle 02 • Princípios de Prosperidade
                 </span>
                 <span class="text-xs text-slate-400">Arquivo MP3 Local</span>
@@ -464,7 +542,7 @@
                 <span>👑 Código Salomão</span>
                 <span class="text-xs font-normal text-sky-300/80 bg-sky-400/10 px-2 py-0.5 rounded">Sabedoria nos Negócios</span>
               </h3>
-              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
                 Construído sobre provérbios e princípios imutáveis de governança, justiça nos acordos comerciais e trabalho com excelência. A conexão viva entre fé e sucesso empresarial.
               </p>
 
@@ -472,20 +550,20 @@
               <div class="bg-brandDark/80 p-4 rounded-xl border border-brandBorder mb-4">
                 <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
                   <span class="font-medium text-slate-200">Player Local (MP3):</span>
-                  <span id="status-audio-2" class="text-[10px] text-accentSky font-mono">Carregando arquivo...</span>
+                  <span id="status-audio-2" class="text-xs text-accentSky font-mono">Carregando arquivo...</span>
                 </div>
                 <audio id="audio-salomao" controls class="w-full h-10 outline-none" preload="metadata">
                   <source src="Código Salomão.mp3" type="audio/mpeg">
                   Seu navegador não suporta o elemento de áudio.
                 </audio>
-                <div class="mt-2 text-[11px] text-slate-400 flex items-center justify-between">
+                <div class="mt-2 text-xs text-slate-400 flex items-center justify-between">
                   <span class="truncate">Arquivo: <code class="text-accentSky">Código Salomão.mp3</code></span>
                   <a href="Código Salomão.mp3" download class="text-accentSky hover:underline shrink-0 ml-2">Baixar</a>
                 </div>
               </div>
             </div>
 
-            <div class="pt-4 border-t border-brandBorder/50 text-[11px] text-slate-400 flex items-center justify-between">
+            <div class="pt-4 border-t border-brandBorder/50 text-xs text-slate-400 flex items-center justify-between">
               <span>Tema: Governança Ética & Fé</span>
               <span class="text-emerald-400 flex items-center gap-1">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Pronto para Redes Sociais
@@ -530,74 +608,71 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <!-- Card 1: Apresentação PPTX -->
-          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-blue-500/50 transition-all">
             <div>
               <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-accentSky flex items-center justify-center mb-5 border border-blue-500/30">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
               </div>
-              <span class="text-[10px] uppercase tracking-wider font-bold text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded">PowerPoint & Slides</span>
-              <h3 class="text-lg font-bold text-white mt-2 mb-2">Apresentação Executiva (PPTX)</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded">PowerPoint & Slides</span>
+              <h3 class="text-lg sm:text-xl font-bold text-white mt-2 mb-2">Apresentação Executiva (PPTX)</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
                 Slides executivos consolidados com a estrutura dos 4 eixos, proposta de valor, dinâmica dos jingles e visão comercial para Anderson e Débora.
               </p>
             </div>
             <div class="space-y-2">
-              <a href="APRESENTACAO_MASTERPLAN_JEN.pptx" download class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors">
+              <a href="GB_Transportes_Strategic_Masterplan.pptx" download class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-md shadow-blue-600/20">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                Baixar Apresentação (.pptx)
+                <span>Baixar Apresentação (.pptx)</span>
               </a>
-              <p class="text-[10px] text-center text-slate-400">Pode ser visualizado no PowerPoint ou Google Slides</p>
+              <p class="text-[11px] sm:text-xs text-center text-slate-400">Arquivo oficial GB Transportes (19 MB)</p>
             </div>
           </div>
 
           <!-- Card 2: Vídeos do NotebookLM -->
-          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-purple-500/50 transition-all">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-purple-500/50 transition-all">
             <div>
               <div class="w-12 h-12 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center mb-5 border border-purple-500/30">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
               </div>
-              <span class="text-[10px] uppercase tracking-wider font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">Multimídia & IA • 2 Vídeos Prontos</span>
-              <h3 class="text-lg font-bold text-white mt-2 mb-2">Vídeos & Sínteses NotebookLM</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded">Multimídia & IA • 2 Vídeos</span>
+              <h3 class="text-lg sm:text-xl font-bold text-white mt-2 mb-2">Vídeos & Sínteses NotebookLM</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
                 Overviews dinâmicos gerados no NotebookLM a partir do caderno de fontes oficial, sintetizando a aliança estratégica e a produtividade com IA.
               </p>
             </div>
             <div class="space-y-2">
-              <button onclick="openVideoModal('O_Masterplan_JEN.mp4', 'O Masterplan JEN — Visão Geral', 'Síntese completa dos 4 eixos, modelo de sustentabilidade e aliança estratégica entre Débora, Anderson e Leomi Oishi.')" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors">
+              <a href="#videos" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-md shadow-purple-600/20">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
-                Assistir Vídeo Principal (Masterplan)
-              </button>
-              <button onclick="openVideoModal('Como_a_IA_Triplica_a_Agilidade_no_Escritório.mp4', 'Como a IA Triplica a Agilidade no Escritório', 'Demonstração prática de como a capacitação in company acelera emissão de comunicados e conferência de fretes.')" class="w-full bg-brandDark hover:bg-brandCard text-purple-300 hover:text-white border border-brandBorder font-semibold text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors">
-                <span>⚡ Vídeo: IA no Escritório (Agilidade)</span>
-              </button>
-              <p class="text-[10px] text-center text-slate-400">Player embutido direto na página</p>
+                <span>Assistir na Seção de Vídeos ↑</span>
+              </a>
+              <p class="text-[11px] sm:text-xs text-center text-slate-400">Player embutido diretamente na página</p>
             </div>
           </div>
 
           <!-- Card 3: Proposta Formal em PDF -->
-          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition-all">
+          <div class="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between hover:border-emerald-500/50 transition-all">
             <div>
               <div class="w-12 h-12 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center mb-5 border border-emerald-500/30">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
               </div>
-              <span class="text-[10px] uppercase tracking-wider font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Documento Oficial PDF</span>
-              <h3 class="text-lg font-bold text-white mt-2 mb-2">Proposta Executiva Formal (PDF)</h3>
-              <p class="text-xs text-slate-300 leading-relaxed mb-6">
-                Documento oficial contendo o modelo da parceria, os compromissos de confidencialidade, valores, dados bancários e condições comerciais.
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Documento Oficial PDF</span>
+              <h3 class="text-lg sm:text-xl font-bold text-white mt-2 mb-2">Proposta Executiva Formal (PDF)</h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                Documento oficial contendo o modelo da aliança, confidencialidade, valores, dados bancários e condições comerciais formatado para leitura no celular.
               </p>
             </div>
             <div class="space-y-2">
-              <a href="PROPOSTA_COMERCIAL_GB_TRANSPORTES.pdf" download class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors">
+              <a href="PROPOSTA_COMERCIAL_GB_TRANSPORTES.pdf" download class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-md shadow-emerald-600/20">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                Baixar Proposta Oficial (PDF)
+                <span>Baixar Proposta Oficial (PDF)</span>
               </a>
-              <p class="text-[10px] text-center text-slate-400">Arquivo PDF executivo pronto para leitura no celular</p>
+              <p class="text-[11px] sm:text-xs text-center text-slate-400">PDF executivo diagramado em página única</p>
             </div>
           </div>
         </div>
 
         <!-- SECTION INFOGRÁFICO INTERATIVO -->
-        <div id="infografico" class="glass-card rounded-3xl p-8 sm:p-10 border-brandBorder/80">
+        <div id="infografico" class="glass-card rounded-3xl p-6 sm:p-10 border-brandBorder/80">
           <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
             <div>
               <span class="text-xs font-bold uppercase tracking-wider text-accentSky bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
@@ -606,63 +681,77 @@
               <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">
                 Esteira de Execução Masterplan JEN
               </h3>
-              <p class="text-xs sm:text-sm text-slate-400 mt-1">
+              <p class="text-sm sm:text-base text-slate-300 mt-1">
                 Do sinal do treinamento à expansão contínua em escala comercial.
               </p>
             </div>
             <div class="flex items-center gap-3">
-              <button onclick="window.print()" class="text-xs text-slate-300 hover:text-white bg-brandDark px-4 py-2 rounded-xl border border-brandBorder flex items-center gap-1.5 transition-colors">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-                Imprimir / Salvar PDF
-              </button>
+              <a href="Infografico-Masterplan_JEN__Estrategia_e_IA.png" download class="text-xs sm:text-sm text-emerald-400 hover:text-white bg-brandDark px-4 py-2.5 rounded-xl border border-brandBorder flex items-center gap-2 transition-colors font-semibold">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                <span>Baixar Infográfico (PNG)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Real High-Res Infographic Display -->
+          <div class="mb-10 bg-black/50 p-2 sm:p-4 rounded-3xl border border-brandBorder/80 shadow-2xl">
+            <div class="overflow-hidden rounded-2xl border border-brandBorder/60 bg-brandDark">
+              <img src="Infografico-Masterplan_JEN__Estrategia_e_IA.png" alt="Infográfico Masterplan JEN - Estratégia e IA" class="w-full h-auto object-contain rounded-2xl hover:scale-[1.008] transition-transform duration-300" loading="lazy" />
+            </div>
+            <div class="mt-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm text-slate-300 px-2">
+              <span><strong>Infográfico Oficial:</strong> Arquitetura estratégica e esteira de valor da parceria GB Transportes & Débora.</span>
+              <span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Alta Resolução
+              </span>
             </div>
           </div>
 
           <!-- Flow Diagram (Responsive SVG/CSS Visual) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative">
             <!-- Step 1 -->
-            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+            <div class="bg-brandDark/90 p-5 sm:p-6 rounded-2xl border border-brandBorder relative">
               <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-accentSky font-bold flex items-center justify-center text-xs mb-3">01</div>
-              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Sinal & Produção</div>
-              <div class="text-sm font-semibold text-accentSky mb-2">50% PIX (R$ 720)</div>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Disparo imediato da diagramação gráfica e impressão das apostilas físicas personalizadas para até 6 colaboradores.
+              <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-1">Sinal & Produção</div>
+              <div class="text-sm sm:text-base font-semibold text-accentSky mb-2">50% PIX (R$ 720)</div>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Disparo imediato da diagramação gráfica e confecção das apostilas físicas personalizadas para até 6 colaboradores.
               </p>
-              <div class="mt-3 text-[10px] text-slate-400">Prazo: 10 dias úteis</div>
+              <div class="mt-3 text-xs text-slate-400">Prazo: 10 dias úteis</div>
             </div>
 
             <!-- Step 2 -->
-            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+            <div class="bg-brandDark/90 p-5 sm:p-6 rounded-2xl border border-brandBorder relative">
               <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs mb-3">02</div>
-              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Capacitação In Company</div>
-              <div class="text-sm font-semibold text-emerald-400 mb-2">Treinamento Prático</div>
-              <p class="text-xs text-slate-400 leading-relaxed">
+              <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-1">Capacitação In Company</div>
+              <div class="text-sm sm:text-base font-semibold text-emerald-400 mb-2">Treinamento Prático</div>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 Aplicação do método phygital com apostilas personalizadas + QR Codes no portal Menutela. Foco em velocidade e comunicação ágil.
               </p>
-              <div class="mt-3 text-[10px] text-slate-400">Equipe GB capacitada</div>
+              <div class="mt-3 text-xs text-slate-400">Equipe GB capacitada</div>
             </div>
 
             <!-- Step 3 -->
-            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+            <div class="bg-brandDark/90 p-5 sm:p-6 rounded-2xl border border-brandBorder relative">
               <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xs mb-3">03</div>
-              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Diagnóstico & Saldo</div>
-              <div class="text-sm font-semibold text-purple-400 mb-2">Raio-X de Competências</div>
-              <p class="text-xs text-slate-400 leading-relaxed">
+              <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-1">Diagnóstico & Saldo</div>
+              <div class="text-sm sm:text-base font-semibold text-purple-400 mb-2">Raio-X de Competências</div>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 Entrega confidencial da avaliação prática da equipe aos diretores e quitação do saldo final (R$ 720).
               </p>
-              <div class="mt-3 text-[10px] text-slate-400">Dossiê de liderança</div>
+              <div class="mt-3 text-xs text-slate-400">Dossiê de liderança</div>
             </div>
 
             <!-- Step 4 -->
-            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+            <div class="bg-brandDark/90 p-5 sm:p-6 rounded-2xl border border-brandBorder relative">
               <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-xs mb-3">04</div>
-              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Podcast & Expansão</div>
-              <div class="text-sm font-semibold text-amber-400 mb-2">20% Comissão B2B</div>
-              <p class="text-xs text-slate-400 leading-relaxed">
-                Lançamento do Podcast da Débora, jingles generativos no ar e captação de novas turmas com comissionamento.
+              <div class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider mb-1">Podcast & Expansão</div>
+              <div class="text-sm sm:text-base font-semibold text-amber-400 mb-2">20% Comissão B2B</div>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Lançamento do Podcast da Débora, jingles generativos no ar e captação de novas turmas corporativas com comissionamento.
               </p>
-              <div class="mt-3 text-[10px] text-slate-400">Crescimento contínuo</div>
+              <div class="mt-3 text-xs text-slate-400">Crescimento contínuo</div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -721,29 +810,29 @@
           </div>
 
           <!-- Action Checklist -->
-          <div class="space-y-3 text-xs text-slate-300 mb-8">
+          <div class="space-y-3.5 text-xs sm:text-sm text-slate-300 mb-8">
             <div class="flex items-center gap-3">
-              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px]">✓</span>
-              <span><strong>Apostilas físicas exclusivas</strong> entregues em mãos no dia do treinamento.</span>
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+              <span><strong>Apostilas físicas exclusivas</strong> encadernadas e entregues em mãos no dia do treinamento.</span>
             </div>
             <div class="flex items-center gap-3">
-              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px]">✓</span>
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
               <span><strong>Acesso permanente</strong> aos materiais digitais e prompts no portal Menutela.com.br.</span>
             </div>
             <div class="flex items-center gap-3">
-              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px]">✓</span>
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs shrink-0">✓</span>
               <span><strong>Relatório Diagnóstico Confidencial</strong> sobre cada colaborador para a gestão.</span>
             </div>
           </div>
 
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://wa.me/5511991873973?text=Ol%C3%A1%20Leomi,%20estamos%20alinhados%20com%20o%20Masterplan%20JEN%20para%20a%20GB%20Transportes!" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/25 transition-all text-center flex items-center justify-center gap-2.5">
-              <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.12.553 4.11 1.523 5.845l-1.616 5.903 6.046-1.586c1.677.917 3.597 1.438 5.647 1.438 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+            <a href="https://wa.me/5511991873973?text=Ol%C3%A1%20Leomi,%20estamos%20alinhados%20com%20o%20Masterplan%20JEN%20para%20a%20GB%20Transportes!" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-sm sm:text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-950/40 transition-all text-center flex items-center justify-center gap-3">
+              <svg class="w-6 h-6 shrink-0 fill-current text-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               <span>Falar no WhatsApp (11) 99187-3973</span>
             </a>
-            <a href="PROPOSTA_COMERCIAL_GB_TRANSPORTES.pdf" download class="w-full sm:w-auto bg-brandDark hover:bg-brandCard text-slate-300 hover:text-white border border-brandBorder font-semibold text-sm px-6 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
-              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <a href="PROPOSTA_COMERCIAL_GB_TRANSPORTES.pdf" download class="w-full sm:w-auto bg-brandDark hover:bg-brandCard text-slate-200 hover:text-white border border-brandBorder font-bold text-sm sm:text-base px-6 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
               <span>Baixar Proposta Oficial (PDF)</span>
             </a>
           </div>
@@ -922,16 +1011,18 @@
         </div>
       </div>
 
-      <div class="flex items-center gap-6 text-slate-400">
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-slate-400">
         <a href="#quatro-eixos" class="hover:text-slate-200 transition-colors">4 Eixos</a>
-        <a href="#jingles" class="hover:text-slate-200 transition-colors">Jingles</a>
+        <a href="#videos" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Vídeos</a>
+        <a href="#jingles" class="hover:text-amber-400 transition-colors">Jingles</a>
         <a href="#apresentacoes" class="hover:text-slate-200 transition-colors">Apresentações</a>
-        <a href="PROPOSTA_COMERCIAL_GB_TRANSPORTES.pdf" download class="hover:text-slate-200 transition-colors">Proposta (PDF)</a>
-        <a href="https://wa.me/5511991873973" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition-colors">WhatsApp</a>
+        <a href="#infografico" class="hover:text-slate-200 transition-colors">Infográfico</a>
+        <a href="#proposta" class="hover:text-emerald-400 transition-colors">Proposta & Valores</a>
+        <a href="https://wa.me/5511991873973" target="_blank" rel="noopener noreferrer" class="text-[#25D366] hover:underline font-semibold">WhatsApp</a>
       </div>
 
-      <div class="text-center sm:text-right text-[11px] text-slate-400">
-        © 2026 Parceria Estratégica. Todos os direitos reservados.
+      <div class="text-center sm:text-right text-xs text-slate-400">
+        © 2026 Parceria Estratégica GB Transportes & Leomi Oishi.
       </div>
     </div>
   </footer>
@@ -1051,6 +1142,42 @@
         }
       };
 
+      // Inline Video Player in Section #videos
+      window.switchInlineVideo = function(filename, title, desc) {
+        const video = document.getElementById('inline-video-player');
+        const source = document.getElementById('inline-video-source');
+        const titleEl = document.getElementById('inline-video-title');
+        const descEl = document.getElementById('inline-video-desc');
+        const downloadBtn = document.getElementById('inline-video-download');
+        const tab1 = document.getElementById('inline-tab-video-1');
+        const tab2 = document.getElementById('inline-tab-video-2');
+
+        if (titleEl) titleEl.textContent = title;
+        if (descEl) descEl.textContent = desc;
+        if (downloadBtn) {
+          downloadBtn.href = filename;
+          downloadBtn.setAttribute('download', filename);
+        }
+
+        const isFirst = filename.includes('Masterplan');
+        if (tab1 && tab2) {
+          if (isFirst) {
+            tab1.className = 'text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl bg-purple-600 text-white flex items-center gap-2 transition-all shrink-0';
+            tab2.className = 'text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl bg-brandDark text-slate-300 hover:text-white border border-brandBorder flex items-center gap-2 transition-all shrink-0';
+          } else {
+            tab2.className = 'text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl bg-purple-600 text-white flex items-center gap-2 transition-all shrink-0';
+            tab1.className = 'text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl bg-brandDark text-slate-300 hover:text-white border border-brandBorder flex items-center gap-2 transition-all shrink-0';
+          }
+        }
+
+        if (video && source && (source.getAttribute('src') !== filename)) {
+          video.pause();
+          source.setAttribute('src', filename);
+          video.load();
+          video.play().catch(() => {});
+        }
+      };
+
       // Close modals on Escape key
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
@@ -1061,10 +1188,10 @@
       });
     });
   </script>
-  <!-- Floating WhatsApp Action Button -->
+  <!-- Floating WhatsApp Action Button (Ícone Oficial WhatsApp) -->
   <aside aria-label="Ação Rápida WhatsApp" class="fixed bottom-5 right-5 z-40">
-    <a href="https://wa.me/5511991873973?text=Ol%C3%A1%20Leomi,%20estamos%20alinhados%20com%20o%20Masterplan%20JEN%20para%20a%20GB%20Transportes!" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-2xl shadow-emerald-600/40 hover:scale-105 active:scale-95 transition-all flex items-center gap-2.5 border border-emerald-400/40 group" aria-label="Falar no WhatsApp (11) 99187-3973">
-      <svg class="w-6 h-6 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.12.553 4.11 1.523 5.845l-1.616 5.903 6.046-1.586c1.677.917 3.597 1.438 5.647 1.438 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+    <a href="https://wa.me/5511991873973?text=Ol%C3%A1%20Leomi,%20estamos%20alinhados%20com%20o%20Masterplan%20JEN%20para%20a%20GB%20Transportes!" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] hover:bg-[#20ba5a] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-2xl shadow-emerald-950/60 hover:scale-105 active:scale-95 transition-all flex items-center gap-2.5 border border-white/20 group" aria-label="Falar no WhatsApp (11) 99187-3973">
+      <svg class="w-6 h-6 shrink-0 fill-current text-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
       <span class="hidden sm:inline-block text-xs font-bold tracking-tight">WhatsApp (11) 99187-3973</span>
     </a>
   </aside>
