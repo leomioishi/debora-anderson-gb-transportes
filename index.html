@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masterplan JEN — Hub Executivo | Débora, Anderson & GB Transportes</title>
+  <meta name="description" content="Hub Executivo Oficial da Parceria Estratégica Masterplan JEN: Débora e Anderson (GB Transportes) & Consultoria Leomi Oishi. Treinamento Corporativo, Podcast, Jingles e Entregáveis.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          colors: {
+            brandDark: '#08090d',
+            brandCard: '#0f1118',
+            brandCardHover: '#161924',
+            brandBorder: '#202434',
+            accentBlue: '#2563eb',
+            accentSky: '#38bdf8',
+            accentGold: '#f59e0b',
+            accentGoldLight: '#fbbf24',
+            accentGreen: '#10b981',
+            accentPurple: '#8b5cf6',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      background-color: #08090d;
+      color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .glass-nav {
+      background: rgba(8, 9, 13, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .glass-card {
+      background: rgba(15, 17, 24, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid #202434;
+    }
+    .glass-card:hover {
+      border-color: #323850;
+    }
+    .gradient-title {
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 60%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-blue {
+      background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-gold {
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-purple {
+      background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glow-gold {
+      box-shadow: 0 0 40px -10px rgba(245, 158, 11, 0.18);
+    }
+    .glow-blue {
+      box-shadow: 0 0 40px -10px rgba(37, 99, 235, 0.20);
+    }
+    /* Custom Audio Player */
+    audio::-webkit-media-controls-panel {
+      background-color: #161924;
+      color: #f1f5f9;
+    }
+    audio::-webkit-media-controls-play-button {
+      background-color: #38bdf8;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-accentBlue selection:text-white relative overflow-x-hidden">
+
+  <!-- Background Decorative Ambient Glows -->
+  <div class="fixed top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Top Announcement Status Bar -->
+  <aside aria-label="Status Executivo" class="bg-[#0b0c12] border-b border-brandBorder/60 py-1.5 sm:py-2 px-3 sm:px-4 text-center text-[10px] sm:text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex items-center justify-center sm:justify-between gap-2">
+      <div class="inline-flex items-center gap-2 truncate">
+        <span class="relative flex h-2 w-2 shrink-0">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span class="font-medium text-slate-300 truncate">
+          <span class="hidden sm:inline text-slate-400">Status Operacional: </span>Alinhamento & Produção Homologados
+        </span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-[11px] text-slate-400 shrink-0">
+        <span>Data-Base: <strong class="text-slate-200">16/09/2026</strong></span>
+        <span>•</span>
+        <span>Metodologia: <strong class="text-slate-200">JENIA / JCCG</strong></span>
+        <span>•</span>
+        <span>Parceria: <strong class="text-accentSky">GB Transportes & Leomi Oishi</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Executive Navbar -->
+  <header class="glass-nav sticky top-0 z-50 border-b border-brandBorder/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-18 flex items-center justify-between gap-2.5 sm:gap-4">
+      <!-- Brand Logo & Title -->
+      <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-amber-500 flex items-center justify-center text-white font-black text-sm sm:text-lg shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform shrink-0">
+          GB
+        </div>
+        <div class="min-w-0">
+          <div class="text-white font-bold tracking-tight text-sm sm:text-base flex items-center gap-1.5 whitespace-nowrap">
+            <span>Masterplan JEN</span>
+            <span class="hidden sm:inline-flex text-[10px] uppercase tracking-wider bg-blue-500/20 text-accentSky px-2 py-0.5 rounded-full border border-blue-500/30">Hub 360°</span>
+          </div>
+          <p class="text-[10px] sm:text-[11px] text-slate-400 font-medium truncate">GB Transportes & Débora</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#quatro-eixos" class="hover:text-white transition-colors">4 Eixos</a>
+        <a href="#jingles" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path></svg>
+          Jingles
+        </a>
+        <a href="#entregaveis" class="hover:text-white transition-colors">Entregáveis & PPTX</a>
+        <a href="#infografico" class="hover:text-white transition-colors">Infográfico</a>
+        <a href="#imersao" class="hover:text-white transition-colors">Grade da Imersão</a>
+        <a href="#proposta" class="hover:text-white transition-colors">Proposta & Valores</a>
+      </nav>
+
+      <!-- Right Action Area (CTA + Mobile Hamburger Toggle) -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="#proposta" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-[11px] sm:text-xs md:text-sm font-semibold px-3 py-1.5 sm:px-4 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md shadow-blue-600/20 transition-all transform hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap">
+          Ver Proposta
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir Menu de Navegação" class="lg:hidden p-1.5 sm:p-2 rounded-lg bg-brandCard hover:bg-brandCardHover border border-brandBorder text-slate-300 hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-accentSky">
+          <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-brandBorder/80 bg-[#0c0e16]/95 backdrop-blur-xl px-4 py-4 space-y-3 transition-all duration-300">
+      <div class="grid grid-cols-2 gap-2 text-xs font-medium">
+        <a href="#quatro-eixos" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span> 4 Eixos
+        </a>
+        <a href="#jingles" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-amber-300 hover:border-amber-500/50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span> Jingles
+        </a>
+        <a href="#entregaveis" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Entregáveis
+        </a>
+        <a href="#infografico" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span> Infográfico
+        </a>
+        <a href="#imersao" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-slate-200 hover:border-blue-500/50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-purple-500"></span> Grade 4h
+        </a>
+        <a href="#proposta" class="mobile-nav-link p-2.5 rounded-lg bg-brandDark border border-brandBorder/60 text-emerald-300 hover:border-emerald-500/50 flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Proposta
+        </a>
+      </div>
+      <div class="pt-2 border-t border-brandBorder/60 flex items-center justify-between text-[11px] text-slate-400">
+        <span>GB Transportes & Leomi Oishi</span>
+        <span class="text-accentSky font-medium">Metodologia JENIA</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-10 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 overflow-hidden">
+      <div class="max-w-5xl mx-auto text-center relative z-10">
+        <!-- Tag -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/25 text-accentSky text-[11px] sm:text-xs font-semibold uppercase tracking-wider mb-5">
+          <span class="w-1.5 h-1.5 rounded-full bg-accentSky animate-pulse"></span>
+          Dossiê Executivo • Metodologia JENIA
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.2] mb-5 sm:mb-6 gradient-title">
+          Masterplan JEN: Inteligência Prática, Liderança & <span class="gradient-gold">Crescimento com Propósito</span>
+        </h1>
+
+        <p class="text-sm sm:text-base md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-10 font-normal">
+          A aliança estratégica entre a consultoria executiva de <strong>Leomi Oishi</strong> e os empresários <strong>Débora e Anderson (GB Transportes)</strong> unindo tecnologia de ponta, produtividade com IA, podcast autossustentável e governança com valores cristãos.
+        </p>
+
+        <!-- Main Action Buttons -->
+        <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-14">
+          <a href="#jingles" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 text-xs sm:text-sm">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-slate-950 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+            <span>Ouvir os 2 Jingles Oficiais</span>
+          </a>
+          <a href="#entregaveis" class="bg-brandCard hover:bg-brandCardHover text-white border border-brandBorder font-semibold px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all hover:border-slate-500 flex items-center justify-center gap-2 text-xs sm:text-sm">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-accentSky shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Apresentação PPTX & Vídeos</span>
+          </a>
+          <a href="#infografico" class="bg-brandCard hover:bg-brandCardHover text-white border border-brandBorder font-semibold px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl transition-all hover:border-slate-500 flex items-center justify-center gap-2 text-xs sm:text-sm">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            <span>Infográfico Visual</span>
+          </a>
+        </div>
+
+        <!-- 4 Highlights Metrics Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+          <div class="glass-card rounded-2xl p-5">
+            <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">Eixos Estratégicos</div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">4 Frentes</div>
+            <p class="text-xs text-slate-400 mt-1">Treinamento, Podcast, Expansão B2B e Livro</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5">
+            <div class="text-xs uppercase tracking-wider font-semibold text-accentSky mb-1">Formato Intensivo</div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">4 Horas</div>
+            <p class="text-xs text-slate-400 mt-1">Imersão presencial in company + Apostila Phygital</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5">
+            <div class="text-xs uppercase tracking-wider font-semibold text-emerald-400 mb-1">Investimento PME</div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">R$ 1.440</div>
+            <p class="text-xs text-slate-400 mt-1">Até 6 colaboradores (50% sinal / 50% entrega)</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5">
+            <div class="text-xs uppercase tracking-wider font-semibold text-amber-400 mb-1">Prazo de Produção</div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">10 Dias</div>
+            <p class="text-xs text-slate-400 mt-1">Impressão física personalizada e esteira digital</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: Os 4 Eixos Estratégicos -->
+    <section id="quatro-eixos" class="py-16 px-6 border-t border-brandBorder/60 bg-[#090b10]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-widest font-bold text-accentSky">Arquitetura de Valor</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+            Os 4 Eixos Sinérgicos da Parceria
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">
+            Cada eixo fortalece o outro, gerando retorno financeiro imediato para a GB Transportes e criando autoridade de mercado para a Débora.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Eixo 1 -->
+          <div class="glass-card rounded-2xl p-7 relative overflow-hidden group hover:border-blue-500/50 transition-all glow-blue">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-blue-500/10 text-accentSky border border-blue-500/20">
+                Eixo 01 • Capacitação Interna
+              </span>
+              <span class="text-xs text-slate-400 font-medium">In Company GB</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Treinamento Corporativo de IA Prática</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Formação de 4 horas presenciais com até 6 colaboradores. Foco em triplicar a agilidade em emissão de comunicados, conferência de fretes, respostas diplomáticas a clientes e automação de planilhas.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Apostila Phygital:</strong> Material físico encadernado com QR Codes para o portal Menutela.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Raio-X Confidencial:</strong> Relatório executivo para Anderson e Débora avaliando cada colaborador.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Investimento:</strong> R$ 1.440 (50% sinal R$ 720 / 50% entrega).
+              </li>
+            </ul>
+            <a href="#imersao" class="text-xs font-semibold text-accentSky hover:text-white inline-flex items-center gap-1">
+              Ver grade detalhada das 4 horas →
+            </a>
+          </div>
+
+          <!-- Eixo 2 -->
+          <div class="glass-card rounded-2xl p-7 relative overflow-hidden group hover:border-purple-500/50 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">
+                Eixo 02 • Mídia & Autoridade
+              </span>
+              <span class="text-xs text-slate-400 font-medium">Modelo 3+1</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Produção Executiva: Podcast da Débora</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Programa voltado a empreendedorismo feminino, superação, gestão logística e fé. Modelo autossustentável bancado por cotas de patrocínio comercial, tendo a GB Transportes como patrocinadora âncora.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-purple-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>3 Meses de Estruturação:</strong> Pauta, esteira de conteúdo e treinamento de oratória.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-purple-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>1 Mês Bônus de Estúdio:</strong> Gravação em estúdio profissional em Arujá.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-purple-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Jingles Suno:</strong> Aberturas temáticas e teasers cantados para viralizar em redes sociais.
+              </li>
+            </ul>
+            <a href="#jingles" class="text-xs font-semibold text-purple-400 hover:text-white inline-flex items-center gap-1">
+              Ouvir jingles e ver roteiros →
+            </a>
+          </div>
+
+          <!-- Eixo 3 -->
+          <div class="glass-card rounded-2xl p-7 relative overflow-hidden group hover:border-emerald-500/50 transition-all">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                Eixo 03 • Comercial B2B
+              </span>
+              <span class="text-xs text-slate-400 font-medium">20% Comissão</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Parceria de Prospecção Corporativa</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              A Débora atua como parceira conectando empresários da sua rede de relacionamentos e fornecedores da GB para a contratação do Treinamento Corporativo de IA.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>20% de Comissão Líquida:</strong> Remuneração direta por cada turma fechada e paga.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Argumento Tributário Poderoso:</strong> Capacitação enquadrada como despesa dedutível no Lucro Real.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Escalabilidade:</strong> Sem estoque, focado na autoridade conjunta.
+              </li>
+            </ul>
+            <a href="#proposta" class="text-xs font-semibold text-emerald-400 hover:text-white inline-flex items-center gap-1">
+              Entenda a alavancagem de turmas →
+            </a>
+          </div>
+
+          <!-- Eixo 4 -->
+          <div class="glass-card rounded-2xl p-7 relative overflow-hidden group hover:border-amber-500/50 transition-all glow-gold">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                Eixo 04 • Princípios & Legado
+              </span>
+              <span class="text-xs text-slate-400 font-medium">Pr. Jessé Odilon</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Livro e Movimento "EVANGEDORISMO"</h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Metodologia e obra literária em coautoria com o Pastor Jessé Odilon, unindo os ensinamentos eternos das Escrituras com governança empresarial séria e inovação tecnológica.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Patrocínio Institucional GB:</strong> Presença da marca como apoiadora oficial da edição.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Exemplares Físicos Exclusivos:</strong> Livros para relacionamento corporativo com grandes clientes.
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <strong>Princípio de Honra:</strong> Fé, negócios e inteligência artificial trabalhando juntos.
+              </li>
+            </ul>
+            <a href="#proposta" class="text-xs font-semibold text-amber-400 hover:text-white inline-flex items-center gap-1">
+              Ver modelo institucional →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Jukebox Executivo — Os Jingles do Masterplan -->
+    <section id="jingles" class="py-20 px-6 border-t border-brandBorder/60 bg-[#0c0e15] relative">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"></path></svg>
+            Áudios do Projeto • Inteligência Musical
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Jingles & Teasers Oficiais
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">
+            Músicas compostas para as aberturas do podcast, chamadas de Reels e identidade sonora da GB Transportes. Dê o play e sinta a energia do projeto!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Jingle 1: José do Egito -->
+          <div class="glass-card rounded-2xl p-7 border-amber-500/30 glow-gold relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  Jingle 01 • Liderança & Estratégia
+                </span>
+                <span class="text-xs text-slate-400">Arquivo MP3 Local</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                <span>🌾 José do Egito</span>
+                <span class="text-xs font-normal text-amber-300/80 bg-amber-400/10 px-2 py-0.5 rounded">Visão Antes da Decisão</span>
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                Inspirado na antecipação de cenários, prudência nos anos de fartura e liderança resoluta para atravessar tempestades. O som ideal para a visão executiva de Anderson e Débora.
+              </p>
+
+              <!-- Local Audio Player 1 -->
+              <div class="bg-brandDark/80 p-4 rounded-xl border border-brandBorder mb-4">
+                <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                  <span class="font-medium text-slate-200">Player Local (MP3):</span>
+                  <span id="status-audio-1" class="text-[10px] text-amber-400 font-mono">Carregando arquivo...</span>
+                </div>
+                <audio id="audio-jose" controls class="w-full h-10 outline-none" preload="metadata">
+                  <source src="José do Egito - Visão Antes da Decisão.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <div class="mt-2 text-[11px] text-slate-400 flex items-center justify-between">
+                  <span class="truncate">Arquivo: <code class="text-accentSky">José do Egito - Visão Antes da Decisão.mp3</code></span>
+                  <a href="José do Egito - Visão Antes da Decisão.mp3" download class="text-amber-400 hover:underline shrink-0 ml-2">Baixar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-brandBorder/50 text-[11px] text-slate-400 flex items-center justify-between">
+              <span>Tema: Antecipação e Sabedoria</span>
+              <span class="text-emerald-400 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Pronto para o Podcast
+              </span>
+            </div>
+          </div>
+
+          <!-- Jingle 2: Código Salomão -->
+          <div class="glass-card rounded-2xl p-7 border-blue-500/30 glow-blue relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-blue-500/20 text-accentSky border border-blue-500/30">
+                  Jingle 02 • Princípios de Prosperidade
+                </span>
+                <span class="text-xs text-slate-400">Arquivo MP3 Local</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                <span>👑 Código Salomão</span>
+                <span class="text-xs font-normal text-sky-300/80 bg-sky-400/10 px-2 py-0.5 rounded">Sabedoria nos Negócios</span>
+              </h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                Construído sobre provérbios e princípios imutáveis de governança, justiça nos acordos comerciais e trabalho com excelência. A conexão viva entre fé e sucesso empresarial.
+              </p>
+
+              <!-- Local Audio Player 2 -->
+              <div class="bg-brandDark/80 p-4 rounded-xl border border-brandBorder mb-4">
+                <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                  <span class="font-medium text-slate-200">Player Local (MP3):</span>
+                  <span id="status-audio-2" class="text-[10px] text-accentSky font-mono">Carregando arquivo...</span>
+                </div>
+                <audio id="audio-salomao" controls class="w-full h-10 outline-none" preload="metadata">
+                  <source src="Código Salomão.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <div class="mt-2 text-[11px] text-slate-400 flex items-center justify-between">
+                  <span class="truncate">Arquivo: <code class="text-accentSky">Código Salomão.mp3</code></span>
+                  <a href="Código Salomão.mp3" download class="text-accentSky hover:underline shrink-0 ml-2">Baixar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-brandBorder/50 text-[11px] text-slate-400 flex items-center justify-between">
+              <span>Tema: Governança Ética & Fé</span>
+              <span class="text-emerald-400 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Pronto para Redes Sociais
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teasers Adicionais do Suno -->
+        <div class="mt-10 glass-card rounded-2xl p-6 border-dashed border-slate-700">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                Roteiros Prontos para Geração Adicional no Suno AI:
+              </h4>
+              <p class="text-xs text-slate-400 mt-1">
+                1. <em>"Carga Pesada, Mente Leve"</em> (Country Rock de estrada) • 2. <em>"Fé, Negócios e Ação"</em> (Gospel Pop) • 3. <em>"Inovação na Pista"</em> (Corporate Upbeat).
+              </p>
+            </div>
+            <a href="ROTEIROS_JINGLES_E_TEASERS.md" target="_blank" class="text-xs font-semibold text-accentSky hover:underline whitespace-nowrap">
+              Ver Roteiros Completos (Markdown) →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Central de Entregáveis & Multimídia (PPTX, Vídeos, Infográfico, Proposta) -->
+    <section id="entregaveis" class="py-20 px-6 border-t border-brandBorder/60 bg-[#090a0f]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-widest font-bold text-accentSky">Central de Ativos Digitais</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+            Entregáveis do Masterplan
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">
+            Acesse e baixe os materiais de suporte executivo montados para a apresentação e tomada de decisão da GB Transportes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <!-- Card 1: Apresentação PPTX -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-blue-500/50 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-accentSky flex items-center justify-center mb-5 border border-blue-500/30">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+              </div>
+              <span class="text-[10px] uppercase tracking-wider font-bold text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded">PowerPoint & Slides</span>
+              <h3 class="text-lg font-bold text-white mt-2 mb-2">Apresentação Executiva (PPTX)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                Slides executivos consolidados com a estrutura dos 4 eixos, proposta de valor, dinâmica dos jingles e visão comercial para Anderson e Débora.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <a href="APRESENTACAO_MASTERPLAN_JEN.pptx" download class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Baixar Apresentação (.pptx)
+              </a>
+              <p class="text-[10px] text-center text-slate-400">Pode ser visualizado no PowerPoint ou Google Slides</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Vídeos do NotebookLM -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-purple-500/50 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center mb-5 border border-purple-500/30">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              </div>
+              <span class="text-[10px] uppercase tracking-wider font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">Multimídia & IA</span>
+              <h3 class="text-lg font-bold text-white mt-2 mb-2">Vídeos & Sínteses NotebookLM</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                Overviews dinâmicos gerados a partir do caderno de fontes da parceria ("Caderno da Verdade"), resumindo os pilares operacionais e a privacidade de dados.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <button onclick="document.getElementById('modal-video').classList.remove('hidden')" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                Assistir Video Overview
+              </button>
+              <p class="text-[10px] text-center text-slate-400">Síntese de áudio & vídeo em duas vozes</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Proposta Formal & Dossiê -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col justify-between hover:border-emerald-500/50 transition-all">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center mb-5 border border-emerald-500/30">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              </div>
+              <span class="text-[10px] uppercase tracking-wider font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Acordo Comercial</span>
+              <h3 class="text-lg font-bold text-white mt-2 mb-2">Proposta Formal & Dossiê</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                Documento integral contendo o modelo pedagógico phygital, os compromissos de confidencialidade, valores, dados bancários e cronograma de execução.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <a href="README.md" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                Ler Dossiê Completo
+              </a>
+              <p class="text-[10px] text-center text-slate-400">Totalmente auditado e salvo em UTF-8</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION INFOGRÁFICO INTERATIVO -->
+        <div id="infografico" class="glass-card rounded-3xl p-8 sm:p-10 border-brandBorder/80">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-accentSky bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+                Infográfico do Fluxo Operacional
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">
+                Esteira de Execução Masterplan JEN
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                Do sinal do treinamento à expansão contínua em escala comercial.
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <button onclick="window.print()" class="text-xs text-slate-300 hover:text-white bg-brandDark px-4 py-2 rounded-xl border border-brandBorder flex items-center gap-1.5 transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                Imprimir / Salvar PDF
+              </button>
+            </div>
+          </div>
+
+          <!-- Flow Diagram (Responsive SVG/CSS Visual) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative">
+            <!-- Step 1 -->
+            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-accentSky font-bold flex items-center justify-center text-xs mb-3">01</div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Sinal & Produção</div>
+              <div class="text-sm font-semibold text-accentSky mb-2">50% PIX (R$ 720)</div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Disparo imediato da diagramação gráfica e impressão das apostilas físicas personalizadas para até 6 colaboradores.
+              </p>
+              <div class="mt-3 text-[10px] text-slate-400">Prazo: 10 dias úteis</div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs mb-3">02</div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Imersão 4h In Company</div>
+              <div class="text-sm font-semibold text-emerald-400 mb-2">Treinamento Prático</div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Aplicação do método phygital com apostilas + QR Codes no portal Menutela. Foco em velocidade e comunicação ágil.
+              </p>
+              <div class="mt-3 text-[10px] text-slate-400">Equipe GB capacitada</div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+              <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xs mb-3">03</div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Diagnóstico & Saldo</div>
+              <div class="text-sm font-semibold text-purple-400 mb-2">Raio-X de Competências</div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Entrega confidencial da avaliação prática da equipe aos diretores e quitação do saldo final (R$ 720).
+              </p>
+              <div class="mt-3 text-[10px] text-slate-400">Dossiê de liderança</div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-brandDark/90 p-5 rounded-2xl border border-brandBorder relative">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-xs mb-3">04</div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider mb-1">Podcast & Expansão</div>
+              <div class="text-sm font-semibold text-amber-400 mb-2">20% Comissão B2B</div>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Lançamento do Podcast da Débora, jingles generativos no ar e captação de novas turmas com comissionamento.
+              </p>
+              <div class="mt-3 text-[10px] text-slate-400">Crescimento contínuo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Grade da Imersão Presencial (4 Horas) -->
+    <section id="imersao" class="py-20 px-6 border-t border-brandBorder/60 bg-[#0c0e15]">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-widest font-bold text-accentSky">Estrutura Didática Phygital</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+            Cronograma das 4 Horas Presenciais
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">
+            Metodologia imersiva orientada à solução de problemas reais da rotina de transportes e logística.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Módulo 1 -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-accentSky font-bold flex items-center justify-center shrink-0 border border-blue-500/20 text-sm">
+                09:00
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="text-base font-bold text-white">Módulo 1: Desmistificando a IA no Transporte de Cargas</h4>
+                  <span class="text-[11px] text-slate-400 bg-brandDark px-2 py-0.5 rounded border border-brandBorder">50 min</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Eliminar medos tecnológicos, conceitos reais de IA generativa, vantagens competitivas para transporte rodoviário e os <strong>5 mandamentos da privacidade corporativa</strong>.
+                </p>
+                <div class="text-[11px] text-accentSky mt-2 flex items-center gap-1">
+                  <span>📱 QR Code Apostila:</span> Vídeo de 2 min sobre Proteção de Dados
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 2 -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-accentSky font-bold flex items-center justify-center shrink-0 border border-blue-500/20 text-sm">
+                09:50
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="text-base font-bold text-white">Módulo 2: Engenharia de Prompt para Comunicação Ágil</h4>
+                  <span class="text-[11px] text-slate-400 bg-brandDark px-2 py-0.5 rounded border border-brandBorder">50 min</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Estrutura de prompt profissional (Contexto, Papel, Tarefa e Formato). Atendimento diplomático para ocorrências de frete, cobranças elegantes e resumos de ordens em 5 segundos.
+                </p>
+                <div class="text-[11px] text-accentSky mt-2 flex items-center gap-1">
+                  <span>📱 QR Code Apostila:</span> Biblioteca de 20 Prompts Prontos para a GB Transportes
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intervalo -->
+          <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-4 flex items-center justify-between px-6 text-xs text-amber-300">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span class="font-semibold">10:40 — 10:55: Coffee Break Estratégico & Networking de Equipe (15 min)</span>
+            </div>
+            <span class="text-[11px] uppercase tracking-wider font-bold">Pausa Dinâmica</span>
+          </div>
+
+          <!-- Módulo 3 -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-accentSky font-bold flex items-center justify-center shrink-0 border border-blue-500/20 text-sm">
+                10:55
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="text-base font-bold text-white">Módulo 3: Análise de Planilhas, Custos e Decisões Rápidas</h4>
+                  <span class="text-[11px] text-slate-400 bg-brandDark px-2 py-0.5 rounded border border-brandBorder">55 min</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Interpretação de despesas de combustível, manutenção e tabelas de frete via IA multimodal. Como criar resumos executivos semanais sem fórmulas complexas.
+                </p>
+                <div class="text-[11px] text-accentSky mt-2 flex items-center gap-1">
+                  <span>📱 QR Code Apostila:</span> Template de Relatório Semanal Automatizado para Gestão
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Módulo 4 -->
+          <div class="glass-card rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-emerald-500/40">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 font-bold flex items-center justify-center shrink-0 border border-emerald-500/20 text-sm">
+                11:50
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="text-base font-bold text-white">Módulo 4: Laboratório "Mão na Massa" & Avaliação Individual</h4>
+                  <span class="text-[11px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">70 min • Decisivo</span>
+                </div>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                  Cada colaborador constrói ao vivo uma automação para seu maior gargalo real. Apresentação individual e consolidação do <strong>Raio-X de Competências</strong> entregue a Débora e Anderson.
+                </p>
+                <div class="text-[11px] text-emerald-400 mt-2 flex items-center gap-1">
+                  <span>🏆 Conclusão:</span> Certificados de Conclusão e Suporte Contínuo no Portal
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Proposta Formal, Valores & Sinal PIX -->
+    <section id="proposta" class="py-20 px-6 border-t border-brandBorder/60 bg-[#090b10]">
+      <div class="max-w-4xl mx-auto">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border-brandBorder relative overflow-hidden">
+          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="text-center max-w-xl mx-auto mb-10">
+            <span class="text-xs uppercase tracking-widest font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+              Condições Comerciais Especiais PME
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+              Proposta de Investimento
+            </h2>
+            <p class="text-slate-400 text-sm mt-2">
+              Transparência integral, formato 50/50 e garantia de execução prática.
+            </p>
+          </div>
+
+          <!-- Price Box -->
+          <div class="bg-brandDark/90 rounded-2xl p-8 border border-brandBorder mb-8 text-center">
+            <div class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Investimento Total da Formação (Até 6 Colaboradores)</div>
+            <div class="text-4xl sm:text-5xl font-black text-white mb-2">
+              R$ 1.440<span class="text-xl font-medium text-slate-400">,00</span>
+            </div>
+            <p class="text-xs text-slate-400 mb-6">Equivale a apenas R$ 240,00 por colaborador capacitado com material físico incluso.</p>
+
+            <!-- Split Payments -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+              <div class="bg-brandCard p-5 rounded-xl border border-brandBorder/80">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-xs font-bold text-accentSky uppercase">Sinal de Entrada (50%)</span>
+                  <span class="text-xs text-slate-400">Fase 01</span>
+                </div>
+                <div class="text-2xl font-bold text-white">R$ 720,00</div>
+                <p class="text-[11px] text-slate-400 mt-1">
+                  Custear diagramação gráfica e impressão das apostilas físicas personalizadas. Inicia a janela de 10 dias úteis.
+                </p>
+              </div>
+
+              <div class="bg-brandCard p-5 rounded-xl border border-brandBorder/80">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-xs font-bold text-emerald-400 uppercase">Saldo Final (50%)</span>
+                  <span class="text-xs text-slate-400">Fase 05</span>
+                </div>
+                <div class="text-2xl font-bold text-white">R$ 720,00</div>
+                <p class="text-[11px] text-slate-400 mt-1">
+                  Pago somente após a conclusão do treinamento presencial de 4h e entrega do dossiê diagnóstico à diretoria.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Checklist -->
+          <div class="space-y-3 text-xs text-slate-300 mb-8">
+            <div class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px]">✓</span>
+              <span><strong>Apostilas físicas exclusivas</strong> entregues em mãos no dia do treinamento.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px]">✓</span>
+              <span><strong>Acesso permanente</strong> aos materiais digitais e prompts no portal Menutela.com.br.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-[10px]">✓</span>
+              <span><strong>Relatório Diagnóstico Confidencial</strong> sobre cada colaborador para a gestão.</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="https://wa.me/?text=Ol%C3%A1%20Leomi,%20estamos%20alinhados%20com%20o%20Masterplan%20JEN%20para%20a%20GB%20Transportes!" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/25 transition-all text-center">
+              Confirmar Sinal & Iniciar Produção via WhatsApp
+            </a>
+            <a href="README.md" target="_blank" class="w-full sm:w-auto bg-brandDark hover:bg-brandCard text-slate-300 hover:text-white border border-brandBorder font-semibold text-sm px-6 py-4 rounded-xl transition-all text-center">
+              Consultar Termos no README.md
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL: Video Overview do NotebookLM -->
+  <div id="modal-video" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="glass-card max-w-2xl w-full rounded-3xl p-6 border-slate-700 relative animate-fade-in">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-purple-500"></span>
+          <h3 class="text-lg font-bold text-white">NotebookLM Studio — Overview da Parceria</h3>
+        </div>
+        <button onclick="document.getElementById('modal-video').classList.add('hidden')" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+      <div class="aspect-video bg-brandDark rounded-2xl flex flex-col items-center justify-center p-6 text-center border border-brandBorder">
+        <div class="w-16 h-16 rounded-full bg-purple-600/20 text-purple-400 flex items-center justify-center mb-3">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+        </div>
+        <p class="text-sm font-semibold text-white mb-1">Visualização Multimídia NotebookLM</p>
+        <p class="text-xs text-slate-400 max-w-md">
+          Este vídeo/áudio overview sintetiza os acordos de governança, o cronograma das 4h e o plano de sustentabilidade do podcast da Débora.
+        </p>
+        <div class="mt-4 text-[11px] text-slate-500 font-mono">
+          Para vincular o arquivo de vídeo MP4 gerado no NotebookLM, salve-o nesta pasta com o nome <code>overview-notebooklm.mp4</code>.
+        </div>
+      </div>
+      <div class="mt-4 text-right">
+        <button onclick="document.getElementById('modal-video').classList.add('hidden')" class="text-xs font-semibold text-slate-300 hover:text-white px-4 py-2 rounded-xl bg-brandDark border border-brandBorder">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Executive Footer -->
+  <footer class="border-t border-brandBorder/80 bg-[#06070a] py-12 px-6 text-slate-400 text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-amber-500 flex items-center justify-center text-white font-bold text-sm">
+          GB
+        </div>
+        <div>
+          <div class="text-slate-200 font-semibold">Masterplan JEN — GB Transportes & Leomi Oishi</div>
+          <p class="text-[11px] text-slate-400">Metodologia JENIA • Ecossistema JCCG • Menutela.com.br</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 text-slate-400">
+        <a href="#quatro-eixos" class="hover:text-slate-200 transition-colors">4 Eixos</a>
+        <a href="#jingles" class="hover:text-slate-200 transition-colors">Jingles</a>
+        <a href="#entregaveis" class="hover:text-slate-200 transition-colors">Entregáveis</a>
+        <a href="README.md" target="_blank" class="hover:text-slate-200 transition-colors">Dossiê</a>
+      </div>
+
+      <div class="text-center sm:text-right text-[11px] text-slate-400">
+        © 2026 Parceria Estratégica. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconOpen = document.getElementById('menu-icon-open');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            iconOpen.classList.add('hidden');
+            iconClose.classList.remove('hidden');
+          } else {
+            mobileMenu.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+          }
+        });
+
+        // Close menu upon clicking any anchor link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+          });
+        });
+      }
+
+      // Audio Status Feedback
+      const audio1 = document.getElementById('audio-jose');
+      const status1 = document.getElementById('status-audio-1');
+      const audio2 = document.getElementById('audio-salomao');
+      const status2 = document.getElementById('status-audio-2');
+
+      function setupAudioFeedback(audioEl, statusEl, filename) {
+        audioEl.addEventListener('canplay', () => {
+          statusEl.textContent = '● Pronto para tocar';
+          statusEl.className = 'text-[10px] text-emerald-400 font-mono';
+        });
+
+        audioEl.addEventListener('error', () => {
+          statusEl.textContent = '○ Copie o MP3 para esta pasta';
+          statusEl.className = 'text-[10px] text-amber-400 font-mono';
+        });
+
+        // Test initial load
+        if (audioEl.readyState >= 2) {
+          statusEl.textContent = '● Pronto para tocar';
+          statusEl.className = 'text-[10px] text-emerald-400 font-mono';
+        }
+      }
+
+      setupAudioFeedback(audio1, status1, 'José do Egito - Visão Antes da Decisão.mp3');
+      setupAudioFeedback(audio2, status2, 'Código Salomão.mp3');
+    });
+  </script>
+</body>
+</html>
